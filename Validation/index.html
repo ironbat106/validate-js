@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Registration form
+    </title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1>User Registration Form</h1>
+
+    <form action="submit.php" method="post" onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td>User ID:</td>
+                <td><input type="text" id="input1" name="id"></td>
+                <td><span id="idError" class="error"></span></td>
+            </tr>
+
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="input2" name="name"></td>
+                <td><span id="nameError" class="error"></span></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" id="input3" name="email"></td>
+                <td><span id="emailError" class="error"></span></td>
+            </tr>
+
+            <tr>
+                <td>Phone No:</td>
+                <td><input type="text" id="input4" name="phoneNo"></td>
+                <td><span id="phoneNoError" class="error"></span></td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" id="input5" name="address"></td>
+                <td><span id="addressError" class="error"></span></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="input6" name="password"></td>
+                <td><span id="passwordError" class="error"></span></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Submit</button> 
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="validate.js"></script>
+</body>
+</html>
